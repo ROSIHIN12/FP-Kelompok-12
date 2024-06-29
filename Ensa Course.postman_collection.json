@@ -1,0 +1,3949 @@
+{
+	"info": {
+		"_postman_id": "4ad55f70-790a-4eab-a26e-b67bdb53ccaa",
+		"name": "Ensa Course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33981937"
+	},
+	"item": [
+		{
+			"name": "Login-jwt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/login",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjQ2NDQyLCJleHAiOjE3MTk2NTM2NDJ9.CvWa6l85hGoGqjBJLiV_s79i6jIfG72vnCHW0ssaqLg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjQ1NzUwLCJleHAiOjE3MTk2NTI5NTB9.gK7AutLNtu7pqpGsvS_zaNmnFKpaFoH9sZe9SW3Un6E",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.39.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					},
+					{
+						"key": "email",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "pass",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/users",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data user by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjQ4Nzg4LCJleHAiOjE3MTk2NTU5ODh9.vkvOMpzXfPGlNtD5FyAtCkGbMkkJd2h7maVyRMBNbTM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsIm5hbWUiOm51bGwsInJvbGUiOiJndXJ1IiwiaWF0IjoxNzE4NTIzMjk2LCJleHAiOjE3MTg1MzA0OTZ9.JGfqw2lETOFUhB20sYItEeP1uZjpbkmDiyKkH4HsOjI",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/users/1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data user by name",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjQ4Nzg4LCJleHAiOjE3MTk2NTU5ODh9.vkvOMpzXfPGlNtD5FyAtCkGbMkkJd2h7maVyRMBNbTM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsIm5hbWUiOm51bGwsInJvbGUiOiJndXJ1IiwiaWF0IjoxNzE4NTIzMjk2LCJleHAiOjE3MTg1MzA0OTZ9.JGfqw2lETOFUhB20sYItEeP1uZjpbkmDiyKkH4HsOjI",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/users/name/ensa",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"name",
+						"ensa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsIm5hbWUiOm51bGwsInJvbGUiOiJndXJ1IiwiaWF0IjoxNzE4NTIzMjk2LCJleHAiOjE3MTg1MzA0OTZ9.JGfqw2lETOFUhB20sYItEeP1uZjpbkmDiyKkH4HsOjI",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "ahmad",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ahmad@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "siswa",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi ahmad",
+							"type": "text"
+						},
+						{
+							"key": "foto_profil",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\FOTO PROFIL SISWA\\siswa5.jpg"
+							],
+							"type": "text"
+						},
+						{
+							"key": "nomor_hp",
+							"value": "098574638",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/users/30",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit data user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsIm5hbWUiOm51bGwsInJvbGUiOiJndXJ1IiwiaWF0IjoxNzE4NTIzMjk2LCJleHAiOjE3MTg1MzA0OTZ9.JGfqw2lETOFUhB20sYItEeP1uZjpbkmDiyKkH4HsOjI",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "ahmad",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ahmad@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "siswa",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi ahmad",
+							"type": "text"
+						},
+						{
+							"key": "foto_profil",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\FOTO PROFIL SISWA\\siswa5.jpg"
+							],
+							"type": "text"
+						},
+						{
+							"key": "nomor_hp",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/users/30",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete data user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsIm5hbWUiOm51bGwsInJvbGUiOiJndXJ1IiwiaWF0IjoxNzE4NTIzMjk2LCJleHAiOjE3MTg1MzA0OTZ9.JGfqw2lETOFUhB20sYItEeP1uZjpbkmDiyKkH4HsOjI",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/users/29",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data kursus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjQ4Nzg4LCJleHAiOjE3MTk2NTU5ODh9.vkvOMpzXfPGlNtD5FyAtCkGbMkkJd2h7maVyRMBNbTM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsIm5hbWUiOm51bGwsInJvbGUiOiJndXJ1IiwiaWF0IjoxNzE4NTIzMjk2LCJleHAiOjE3MTg1MzA0OTZ9.JGfqw2lETOFUhB20sYItEeP1uZjpbkmDiyKkH4HsOjI",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kursus",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kursus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data kursus by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsIm5hbWUiOm51bGwsInJvbGUiOiJndXJ1IiwiaWF0IjoxNzE4NTIzMjk2LCJleHAiOjE3MTg1MzA0OTZ9.JGfqw2lETOFUhB20sYItEeP1uZjpbkmDiyKkH4HsOjI",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kursus/4",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kursus",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data kursus by nama",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsIm5hbWUiOm51bGwsInJvbGUiOiJndXJ1IiwiaWF0IjoxNzE4NTIzMjk2LCJleHAiOjE3MTg1MzA0OTZ9.JGfqw2lETOFUhB20sYItEeP1uZjpbkmDiyKkH4HsOjI",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kursus/name/Laravel",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kursus",
+						"name",
+						"Laravel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data kursus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsIm5hbWUiOm51bGwsInJvbGUiOiJndXJ1IiwiaWF0IjoxNzE4NTIzMjk2LCJleHAiOjE3MTg1MzA0OTZ9.JGfqw2lETOFUhB20sYItEeP1uZjpbkmDiyKkH4HsOjI",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "python",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi python",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "250000",
+							"type": "text"
+						},
+						{
+							"key": "gambar",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\FOTO KURSUS\\baner ionic.jpg"
+							],
+							"type": "text"
+						},
+						{
+							"key": "media",
+							"value": "https://us05web.zoom.us/j/83264192072?pwd=AaUNsCIQOfSKbSPFTWloyVOpM6ajsh.1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "kategori_kursus_id",
+							"value": "8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kursus",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kursus"
+					],
+					"query": [
+						{
+							"key": "nama",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "deskripsi",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "harga",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "gambar",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "media",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "user_id",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "kategori_kursus_id",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit data kursus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsIm5hbWUiOm51bGwsInJvbGUiOiJndXJ1IiwiaWF0IjoxNzE4NTIzMjk2LCJleHAiOjE3MTg1MzA0OTZ9.JGfqw2lETOFUhB20sYItEeP1uZjpbkmDiyKkH4HsOjI",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "python",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi python",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "300000",
+							"type": "text"
+						},
+						{
+							"key": "gambar",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\FOTO KURSUS\\baner ionic.jpg"
+							],
+							"type": "text"
+						},
+						{
+							"key": "media",
+							"value": "https://us05web.zoom.us/j/83264192072?pwd=AaUNsCIQOfSKbSPFTWloyVOpM6ajsh.1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "kategori_kursus_id",
+							"value": "8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kursus/10",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kursus",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete data kursus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsIm5hbWUiOm51bGwsInJvbGUiOiJndXJ1IiwiaWF0IjoxNzE4NTIzMjk2LCJleHAiOjE3MTg1MzA0OTZ9.JGfqw2lETOFUhB20sYItEeP1uZjpbkmDiyKkH4HsOjI",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "python",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi python",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "300000",
+							"type": "text"
+						},
+						{
+							"key": "gambar",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\FOTO KURSUS\\baner ionic.jpg"
+							],
+							"type": "text"
+						},
+						{
+							"key": "media",
+							"value": "https://us05web.zoom.us/j/83264192072?pwd=AaUNsCIQOfSKbSPFTWloyVOpM6ajsh.1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "kategori_kursus_id",
+							"value": "8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kursus/10",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kursus",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data kategori kursus",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsIm5hbWUiOm51bGwsInJvbGUiOiJndXJ1IiwiaWF0IjoxNzE4NTIzMjk2LCJleHAiOjE3MTg1MzA0OTZ9.JGfqw2lETOFUhB20sYItEeP1uZjpbkmDiyKkH4HsOjI",
+						"name": "authorization",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"name": "cache-control",
+						"type": "text"
+					},
+					{
+						"key": "Postman-Token",
+						"value": "<calculated when request is sent>",
+						"name": "postman-token",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"name": "host",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "PostmanRuntime/7.32.1",
+						"name": "user-agent",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*",
+						"name": "accept",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"name": "accept-encoding",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"name": "connection",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "python",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi python",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "300000",
+							"type": "text"
+						},
+						{
+							"key": "gambar",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\FOTO KURSUS\\baner ionic.jpg"
+							],
+							"type": "text"
+						},
+						{
+							"key": "media",
+							"value": "https://us05web.zoom.us/j/83264192072?pwd=AaUNsCIQOfSKbSPFTWloyVOpM6ajsh.1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "kategori_kursus_id",
+							"value": "8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kategori-kursus",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kategori-kursus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data kategori kursus by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kategori-kursus/1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kategori-kursus",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data kategori kursus by nama",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kategori-kursus/web developer",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kategori-kursus",
+						"web developer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data kategori kursus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "software enginering",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kategori-kursus",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kategori-kursus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit data kategori kursus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "software enginering full stack",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kategori-kursus/9",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kategori-kursus",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete data kategori  kursus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "software enginering full stack",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kategori-kursus/9",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kategori-kursus",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data materi kursus",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "software enginering full stack",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/materi-kursus",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"materi-kursus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data materi kursus by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "software enginering full stack",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/materi-kursus/1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"materi-kursus",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data materi kursus by nama",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "software enginering full stack",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/materi-kursus/Materi 1 - Laravel",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"materi-kursus",
+						"Materi 1 - Laravel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data materi kursus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "materi 2 - laravel",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "pengenalan api",
+							"type": "text"
+						},
+						{
+							"key": "materi",
+							"value": "https://docs.google.com/document/d/1gOg9pVfvouoX4UU2lm-FixPmrAHLQJmCZ8oHi3vWO8Y/edit?usp=sharing ",
+							"type": "text"
+						},
+						{
+							"key": "id_kursus",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/materi-kursus",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"materi-kursus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit data materi kursus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "materi 2 - laravel",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "pengenalan api dan rest api",
+							"type": "text"
+						},
+						{
+							"key": "materi",
+							"value": "https://docs.google.com/document/d/1gOg9pVfvouoX4UU2lm-FixPmrAHLQJmCZ8oHi3vWO8Y/edit?usp=sharing ",
+							"type": "text"
+						},
+						{
+							"key": "id_kursus",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/materi-kursus/10",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"materi-kursus",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapus data materi kursus",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUxNTAyLCJleHAiOjE3MTk2NTg3MDJ9.tBGzZ9SFQ_6uAaR6-D21CuMTqfT3e1AYuwgCZG-Z9y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "materi 2 - laravel",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "pengenalan api dan rest api",
+							"type": "text"
+						},
+						{
+							"key": "materi",
+							"value": "https://docs.google.com/document/d/1gOg9pVfvouoX4UU2lm-FixPmrAHLQJmCZ8oHi3vWO8Y/edit?usp=sharing ",
+							"type": "text"
+						},
+						{
+							"key": "id_kursus",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/materi-kursus/10",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"materi-kursus",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data pendaftaran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pendaftaran",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pendaftaran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data pendaftaran by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pendaftaran/27",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pendaftaran",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data pendaftaran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "id_kursus",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "status_pendaftaran",
+							"value": "menunggu pembayaran",
+							"type": "text"
+						},
+						{
+							"key": "status_kursus",
+							"value": "Belum Aktif",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pendaftaran",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pendaftaran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit data pendaftaran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "id_kursus",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "status_pendaftaran",
+							"value": "berhasil",
+							"type": "text"
+						},
+						{
+							"key": "status_kursus",
+							"value": "Aktif",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pendaftaran/28",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pendaftaran",
+						"28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete data pendaftaran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "id_kursus",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "status_pendaftaran",
+							"value": "berhasil",
+							"type": "text"
+						},
+						{
+							"key": "status_kursus",
+							"value": "Aktif",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pendaftaran/28",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pendaftaran",
+						"28"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data pembayaran",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "id_kursus",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "status_pendaftaran",
+							"value": "berhasil",
+							"type": "text"
+						},
+						{
+							"key": "status_kursus",
+							"value": "Aktif",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pembayaran",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pembayaran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data pembayaran by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pembayaran/20",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pembayaran",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data pembayaran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "id_kursus",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_pembayaran",
+							"value": "300000",
+							"type": "text"
+						},
+						{
+							"key": "bukti_pembayaran",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\BUKTI PEMBAYARAN\\2.png"
+							],
+							"type": "text"
+						},
+						{
+							"key": "status_pembayaran",
+							"value": "sedang diperiksa",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pembayaran",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pembayaran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit data pembayaran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "id_kursus",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_pembayaran",
+							"value": "300000",
+							"type": "text"
+						},
+						{
+							"key": "bukti_pembayaran",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\BUKTI PEMBAYARAN\\2.png"
+							],
+							"type": "text"
+						},
+						{
+							"key": "status_pembayaran",
+							"value": "berhasil",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pembayaran/21",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pembayaran",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete data pembayaran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_user",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "id_kursus",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_pembayaran",
+							"value": "300000",
+							"type": "text"
+						},
+						{
+							"key": "bukti_pembayaran",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\BUKTI PEMBAYARAN\\2.png"
+							],
+							"type": "text"
+						},
+						{
+							"key": "status_pembayaran",
+							"value": "berhasil",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pembayaran/21",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pembayaran",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data informmasi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/informasi",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"informasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data informmasi by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/informasi/1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"informasi",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data informmasi by nama",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/informasi/Pembukaan Ensa Course",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"informasi",
+						"Pembukaan Ensa Course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data informasi",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "informasi kursus",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi informasi kursus",
+							"type": "text"
+						},
+						{
+							"key": "gambar",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\FOTO KURSUS\\baner mysql.jpg"
+							],
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/informasi",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"informasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit data informasi",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "informasi kursus",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi informasi kursus hari ini",
+							"type": "text"
+						},
+						{
+							"key": "gambar",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\FOTO KURSUS\\baner mysql.jpg"
+							],
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/informasi/4",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"informasi",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapus data informasi",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "informasi kursus",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi informasi kursus hari ini",
+							"type": "text"
+						},
+						{
+							"key": "gambar",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\FOTO KURSUS\\baner mysql.jpg"
+							],
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/informasi/4",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"informasi",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data tugas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/tugas",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"tugas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data tugas by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/tugas/1",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"tugas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data tugas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "judul",
+							"value": "Tugas 3 Laravel",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi tugas 3 laravel",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_deadline",
+							"value": "2024-06-30",
+							"type": "text"
+						},
+						{
+							"key": "kursus_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/tugas",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"tugas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit data tugas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "judul",
+							"value": "Tugas 4 Laravel",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi tugas 4 laravel",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_deadline",
+							"value": "2024-06-30",
+							"type": "text"
+						},
+						{
+							"key": "kursus_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/tugas/9",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"tugas",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapus data tugas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "judul",
+							"value": "Tugas 4 Laravel",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi tugas 4 laravel",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_deadline",
+							"value": "2024-06-30",
+							"type": "text"
+						},
+						{
+							"key": "kursus_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/tugas/9",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"tugas",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data pengumpulan tugas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pengumpulan-tugas",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pengumpulan-tugas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data pengumpulan tugas by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pengumpulan-tugas/4",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pengumpulan-tugas",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data pengumpulan tugas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tugas_id",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "file_path",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\TUGAS KURSUS - ENSA.docx"
+							],
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pengumpulan-tugas",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pengumpulan-tugas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit data pengumpulan tugas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tugas_id",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "file_path",
+							"type": "file",
+							"src": "C:\\Users\\iyos2\\Downloads\\PRESENTASI\\TUGAS KURSUS - ENSA.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pengumpulan-tugas/6",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pengumpulan-tugas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapus data pengumpulan tugas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "tugas_id",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "file_path",
+							"type": "file",
+							"src": "C:\\Users\\iyos2\\Downloads\\PRESENTASI\\TUGAS KURSUS - ENSA.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/pengumpulan-tugas/6",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"pengumpulan-tugas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data penilaian",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/penilaian",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"penilaian"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data penilaian by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/penilaian/6",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"penilaian",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data penilaian",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pengumpulan_tugas_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "guru_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "nilai",
+							"value": "81",
+							"type": "text"
+						},
+						{
+							"key": "komentar",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\TUGAS KURSUS - ENSA.docx"
+							],
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/penilaian",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"penilaian"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit data penilaian",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pengumpulan_tugas_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "guru_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "nilai",
+							"value": "82",
+							"type": "text"
+						},
+						{
+							"key": "komentar",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\TUGAS KURSUS - ENSA.docx"
+							],
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/penilaian/8",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"penilaian",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete data penilaian",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "pengumpulan_tugas_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "guru_id",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "nilai",
+							"value": "82",
+							"type": "text"
+						},
+						{
+							"key": "komentar",
+							"value": [
+								"C:\\Users\\iyos2\\Downloads\\PRESENTASI\\TUGAS KURSUS - ENSA.docx"
+							],
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/penilaian/8",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"penilaian",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data kehadiran",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kehadiran",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kehadiran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data kehadiran by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kehadiran/12",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kehadiran",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data kehadiran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "kursus_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "tanggal",
+							"value": "2024-06-30",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kehadiran",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kehadiran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit data kehadiran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "kursus_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "tanggal",
+							"value": "2024-06-29",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kehadiran/23",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kehadiran",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapus data kehadiran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "kursus_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "tanggal",
+							"value": "2024-06-29",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/kehadiran/23",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"kehadiran",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data isi kehadiran",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/isi-kehadiran",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"isi-kehadiran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show data isi kehadiran by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/isi-kehadiran/10",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"isi-kehadiran",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create data isi kehadiran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "kehadiran_id",
+							"value": "22",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "hadir",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/isi-kehadiran",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"isi-kehadiran"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit data isi kehadiran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "kehadiran_id",
+							"value": "22",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "tidak hadir",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/isi-kehadiran/11",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"isi-kehadiran",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hapus data isi kehadiran",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJBZG1pbmlzdHJhdG9yIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzE5NjUzOTM5LCJleHAiOjE3MTk2NjExMzl9.GdLp6CjrxCjuBeUkNFffzPlK39r3HftQHJXanBmTwj0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "kehadiran_id",
+							"value": "22",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "28",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "tidak hadir",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.ensa-course.fipro24.com/api/isi-kehadiran/11",
+					"protocol": "https",
+					"host": [
+						"www",
+						"ensa-course",
+						"fipro24",
+						"com"
+					],
+					"path": [
+						"api",
+						"isi-kehadiran",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
